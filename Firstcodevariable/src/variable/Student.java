@@ -3,11 +3,12 @@ package variable;
 
 public class Student {
 String name = "Virinchi";
-    public void addition() {
-        int firstNumber = 10;
-        int secondNumber = 5;
-        System.out.println("sum of the number is " + (firstNumber + secondNumber));
-        System.out.println("College name ="+ name);
+    int number= 50; //instance variable
+    static String collageName = "VIRINCHI";    
+    public void methodName {
+      
+        System.out.println("sum of the number is " + a);
+        System.out.println("College name ="+ number);
     }
 }
 
