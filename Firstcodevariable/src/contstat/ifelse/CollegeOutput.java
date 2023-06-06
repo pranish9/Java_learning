@@ -5,5 +5,6 @@ public class CollegeOutput {
         College obj = new College();
         int p = obj.getMarks();
         System.out.println("Total marks "+p);
+        obj.Marko();
     }
 }
