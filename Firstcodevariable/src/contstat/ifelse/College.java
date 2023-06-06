@@ -7,6 +7,9 @@ public class College {
         if (mathmarks > 50 && scienceMarks > 50){
             System.out.println("A");
         }
-        return mathmarks;
+        else if (mathmarks > 40 && scienceMarks > 30){
+            System.out.println("B");
+        }
+        return mathmarks + scienceMarks;
     }
 }

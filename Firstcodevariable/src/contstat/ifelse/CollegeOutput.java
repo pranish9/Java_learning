@@ -4,6 +4,6 @@ public class CollegeOutput {
     public static void main(String[] args) {
         College obj = new College();
         int p = obj.getMarks();
-        System.out.println("answer is "+p);
+        System.out.println("Total marks "+p);
     }
 }
