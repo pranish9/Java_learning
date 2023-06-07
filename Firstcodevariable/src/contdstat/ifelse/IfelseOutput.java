@@ -7,6 +7,6 @@ public class IfelseOutput {
         int p = obj1.getMarks();
         System.out.println("the total number is"+ p);
         obj1.times();
-    }
 
+    }
 }

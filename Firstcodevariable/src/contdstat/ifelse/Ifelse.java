@@ -1,5 +1,7 @@
 package contdstat.ifelse;
 
+import java.util.Scanner;
+
 public class Ifelse {
     public int getMarks(){
         int mathmarks = 50;
