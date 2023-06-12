@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class ForLoopQ {
     public void Loopa(){
-        //print number from  1 - 10
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter your name");
+        String p = sc.nextLine();
+        //print youir name  from  1 - 10 times
       for (int i =1 ; i <= 10; i++){
-          System.out.println("Pranish");
+          System.out.println( i + " your name is" +p);
       }
     }
     public void palin(){
