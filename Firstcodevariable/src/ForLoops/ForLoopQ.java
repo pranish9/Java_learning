@@ -44,4 +44,23 @@ if (s == n)
             System.out.println("it is not a armstrong");
 
     }
+    public void WhileLoopques(){
+        int i = 0;
+        while (i < 5) {
+            System.out.println(i);
+            i++;
+        }
+    }
+    public void multi(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the number mwant the multiplication of");
+        int n = sc.nextInt();
+        int i = 0;
+
+        while (i < 10) {
+            int muti = i * n;
+            System.out.println(i +" *" + n +" ="+ muti );
+            i++;
+        }
+    }
 }

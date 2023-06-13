@@ -7,5 +7,7 @@ public class ForLoopQOutput {
             loop.Loopa();
             loop.palin();
             loop.arm();
+            loop.WhileLoopques();
+            loop.multi();
         }
 }
