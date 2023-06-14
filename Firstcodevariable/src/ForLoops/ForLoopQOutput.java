@@ -6,7 +6,7 @@ public class ForLoopQOutput {
 
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
-            System.out.println("1: Print your name 10 times\n2: palindrome number in java\n3: armstrong number\n4: whileloop 1 to 5\n5: multiplication of any number\n6:break and continue used in this\n7: area of circle");
+            System.out.println("1: Print your name 10 times\n2: palindrome number in java\n3: armstrong number\n4: whileloop 1 to 5\n5: multiplication of any number\n6:break and continue used in this\n7: area of circle using return type double");
             System.out.println("enter which lopp do you want to run");
             int n = sc.nextInt();
             ForLoopQ loop = new ForLoopQ();
@@ -29,6 +29,13 @@ switch (n){
     case 6 :
         loop.displayBreak();
         break;
+    case 7:
+        System.out.println(loop.areaOfCircle());
+    case 8:
+        System.out.println(loop.areaOfRectangle());
+        break;
+    case 9:
+        System.out.println(loop.Stringre());
     default:
         System.out.println("invalid number");
 }

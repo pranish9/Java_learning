@@ -74,4 +74,28 @@ if (s == n)
             System.out.println(i);
                 }
     }
+    public double areaOfCircle(){
+        double pi =3.14;
+        int r = 2;
+        return pi*(r*r);
+
+    }
+    public float areaOfRectangle(){
+       float l =15.4f;
+        float b = 34.34f;
+        return l *b;
+
+    }
+    public int multiPli(){
+        int i = 77, j = 234;
+        return i *j;
+
+    }
+    public String Stringre(){
+        Scanner si = new Scanner(System.in);
+        System.out.println("what is your name");
+        String name = si.nextLine();
+        return name;
+
+    }
 }
