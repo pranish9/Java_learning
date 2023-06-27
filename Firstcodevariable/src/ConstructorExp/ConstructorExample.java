@@ -19,5 +19,8 @@ public class ConstructorExample {
     }
     public static void main(String[] args) {
         ConstructorExample e1 = new ConstructorExample();
+        ConstructorExample e2 = new ConstructorExample("ram");
+            e1.getName();
+            e2.getName("sita");
     }
 }
