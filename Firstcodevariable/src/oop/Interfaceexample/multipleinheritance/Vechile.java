@@ -9,6 +9,7 @@ public void run(){
     @Override
     public void speed() {
         System.out.println("speed is more than 100km");
+
     }
 
     @Override
