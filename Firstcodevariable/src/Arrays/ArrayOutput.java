@@ -7,5 +7,6 @@ public class ArrayOutput {
         a.plus();
         a.displayStringArray();
         a.multidimensionalArray();
+        a.multiInput();
     }
 }

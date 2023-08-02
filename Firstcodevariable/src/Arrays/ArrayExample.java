@@ -1,5 +1,5 @@
 package Arrays;
-
+import java.util.Scanner;
 public class ArrayExample {
     public void display() {
         int number[] = new int[10];
@@ -47,5 +47,37 @@ public class ArrayExample {
         System.out.println(array[0][0]);
         System.out.println(array[1][1]);
     }
-}
+    public void multiInput(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int columns = sc.nextInt();
+        sc.nextLine();
+        String[][] multiArray = new String[rows][columns];
+
+        System.out.println("Enter the elements of the array:");
+
+        // Taking input from the user to populate the array
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                System.out.println("element[" +i+"]["+j+"]");
+                multiArray[i][j] = sc.nextLine();
+            }
+        }
+
+        // Using a for-each loop to iterate through the 2D array
+        for (String[] row : multiArray) {
+            for (String num : row) {
+                System.out.print(num + " ");
+            }
+            System.out.println(); // Move to the next row
+        }
+
+        sc.close(); // Close the scanner when done
+    }
+
+    }
+
 
