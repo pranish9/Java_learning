@@ -62,8 +62,9 @@ public class ArrayExample {
         // Taking input from the user to populate the array
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                System.out.println("element[" +i+"]["+j+"]");
+                System.out.println("element[" +i+"]["+j+"]]=");
                 multiArray[i][j] = sc.nextLine();
+                
             }
         }
 
