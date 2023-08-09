@@ -15,8 +15,11 @@ public class ArrayListExp {
         li.add(30);
         li.add(50);
         System.out.println("For Each");
+        li.set(1, 50);
+        System.out.println("element "+ li.get(2));
         for (int val:li) {
             System.out.println(val+" ");
+
         }
         System.out.println("For loop");
         for (int i = 0; i <li.size(); i++){
