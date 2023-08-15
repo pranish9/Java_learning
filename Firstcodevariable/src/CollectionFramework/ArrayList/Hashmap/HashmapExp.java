@@ -10,5 +10,8 @@ public class HashmapExp {
         hm.put(113,"KIST");
         hm.put(114,"NCIT");
         System.out.println("After Adding data in hashmap:"+hm);
+        hm.remove(111,"Virinch");
+        System.out.println("After Removing data from hashmap"+hm+hm.get(111));
+
     }
 }
