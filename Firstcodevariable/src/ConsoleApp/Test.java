@@ -15,28 +15,38 @@ public class Test {
             s.setId(sc.nextInt());
 
             System.out.println("Enter Student First Name: ");
-            s.setfName(sc.nextLine());
+            s.setfName(sc.next());
 
             System.out.println("Enter Student Last Name: ");
-            s.setlName(sc.nextLine());
+            s.setlName(sc.next());
 
             System.out.println("Enter Student Age: ");
             s.setAge(sc.nextInt());
 
-            System.out.println("Enter Student Age: ");
-            s.setCollage(sc.nextLine());
+            System.out.println("Enter Student Collage: ");
+            s.setCollage(sc.next());
 
-            System.out.println("Enter Student Age: ");
-            s.setFaculty(sc.nextLine());
+            System.out.println("Enter Student faculty: ");
+            s.setFaculty(sc.next());
 
             ss.addStudent(s);
             System.out.println("Do you want to Continue [y/n]");
             flag = sc.next().charAt(0);
-        } while( flag == 'y');
+        } while(flag == 'y');
         //====================== get All Student ========================
         List<Student> sList = ss.getAllStudent();
         System.out.println(sList.toString());
 
-
+        //============= Delete Student ==================
+        System.out.println("Do you want to delte student [y/n]");
+        char flag1 = 'y';
+        flag1 = sc.next().charAt(0);
+        if(flag1=='y'){
+            System.out.println("Enter Index to delete");
+            ss.deleteStudent(sc.nextInt());
+//            ================= Get All Student ==================
+            System.out.println("Student after the Deletation");
+            System.out.println(ss.getAllStudent());
+        }
     }
 }

@@ -51,6 +51,18 @@ public class Student {
         return faculty;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", fName='" + fName + '\'' +
+                ", lName='" + lName + '\'' +
+                ", age=" + age +
+                ", Collage='" + Collage + '\'' +
+                ", faculty='" + faculty + '\'' +
+                '}';
+    }
+
     public void setFaculty(String faculty) {
         this.faculty = faculty;
     }
