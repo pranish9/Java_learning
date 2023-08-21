@@ -2,6 +2,7 @@ package filehandling;
 
 import java.io.File;
 
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -21,6 +22,17 @@ public class ReadWriteFiles {
     } catch (IOException e){
         e.printStackTrace();
     }
+}
+public void readFiles(){
+        File file = new File("D:/java/Firstcodevariable/src/filehandling/test");
+        try {
+            FileReader fileReader = new FileReader(file);
+            int a;
+            while((a = fileReader.read()) != -1)
+            System.out.print((char) a);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
 }
 }
 
